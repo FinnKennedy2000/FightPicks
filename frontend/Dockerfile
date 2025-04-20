@@ -11,7 +11,7 @@ RUN bun install
 COPY . .
 
 # Build the Expo web app
-RUN bunx expo export -p web
+RUN bun x expo export -p web
 
 # Expose the port for the web app
 EXPOSE 19006
